@@ -1,0 +1,34 @@
+body{
+
+}
+#container{
+	text-align: center;	
+	color: black;
+
+}
+
+.professional_link{
+	height: 150px;
+	width: 150px
+}
+
+.col.s3.head {
+	font-size: 150%;	
+}
+
+#content
+{
+    position:absolute;
+    top: 195px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;        
+}​
+#right{
+	line-height: 100px;
+}
+#child{
+	margin-top: 80px;
+}
+

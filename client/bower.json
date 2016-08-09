@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "authors": [
+    "Andrew Yeung <andrewhyeung@gmail.com>"
+  ],
+  "description": "portfolio front dependencies",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7",
+    "jquery": "^3.1.0",
+    "angular": "^1.5.8"
+  }
+}
