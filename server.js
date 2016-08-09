@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 
 var nodemailer = require('nodemailer'); 
 
+var pa = require('./app.js')
+
 app.use(express.static(path.join(__dirname, '/client'))); 
 app.use(bodyParser.json()); 
 
@@ -22,7 +24,7 @@ var smtpConfig ={
 	secure: true, 
 	auth: {
 		user: 'andrewhyeung@gmail.com', 
-		pass: 'ellzbellz124'
+		pass: pa.key() 
 	}
 };
 
@@ -30,7 +32,7 @@ var transporter = nodemailer.createTransport(smtpConfig);
 
 app.post('/email', function(req, res){
 	var mailOptions = {
-		    from: req.body.name, // sender address 
+		    from: req.body.name, 
 		    to: 'andrewhyeung@gmail.com', // list of receivers 
 		    subject: 'Message from portfolio', // Subject line 
 		    text: req.body.message + ' from ' + req.body.email
