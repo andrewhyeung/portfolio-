@@ -15,31 +15,28 @@ app.listen(8000, function(){
 	console.log('this is my portfolio'); 
 });
 
-// var smtpConfig ={
-// 	host: 'smtp.gmail.com', 
-// 	port: 465, 
-// 	secure: true, 
-// 	auth: {
-// 		user: 'andrewhyeung@gmail.com', 
-// 		pass: 'pass'
-// 	}
-// };
+var smtpConfig ={
+	service: "Gmail",
+	host: 'smtp.gmail.com', 
+	port: 465, 
+	secure: true, 
+	auth: {
+		user: 'andrewhyeung@gmail.com', 
+		pass: 'ellzbellz124'
+	}
+};
 
-var smtpConfig = 'smtps://andrewhyeung%40gmail.com:pass@smtp.gmail.com';
-// create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(smtpConfig);
-
-// setup e-mail data with unicode symbols
-
 
 app.post('/email', function(req, res){
 	var mailOptions = {
-	    from:'"req.body.name" <req.body.email>', // sender address
-	    to: 'andrewhyeung@gmail.com', // list of receivers
-	    subject: req.body.subject, // Subject line
-	    text: req.body.text, // plaintext body
-	};
-	console.log(mailOptions); 
+		    from: req.body.name, // sender address 
+		    to: 'andrewhyeung@gmail.com', // list of receivers 
+		    subject: 'Message from portfolio', // Subject line 
+		    text: req.body.message + ' from ' + req.body.email
+		  
+		};
+	console.log('this is the mail options', mailOptions); 
 
 	transporter.sendMail(mailOptions, function(error, info){
 	    if(error){

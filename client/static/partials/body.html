@@ -1,4 +1,4 @@
-<div id="container">
+<div id="container" ng-controller='emailController'>
 	<div id="header">
 		<h2>Andrew Yeung</h2>
 		<h6>"Full stack developer looking to add creative solutions to software development problems"</h6>
@@ -83,17 +83,17 @@
 	<div class="container">
 		<div id="contact" class='section scrollspy'>
 			<h4>Contact me</h4>
-			<form action="MAILTO:andrewhyeung@gmail.com" method="post" enctype="text/plain">
+			<form ng-submit='submitForm()' enctype="text/plain">
 				Name:<br>
-				<input type="text" name="name" placeholder="your name" required><br>
+				<input id="first_name" type="text" ng-model = 'name' placeholder='your name' required><br>
 				E-mail:<br>
-				<input type="email" name="mail" placeholder="your email" required><br>
-				Comment:<br>
-				<input type="text" name="comment" placeholder="your comment" size="50" required><br><br>
-				<input type="submit" value="Send" id='button'>
+				<input type="email" ng-model='email' placeholder="your email" required><br>
+				Message:<br>
+				<input type="text" ng-model='message' placeholder="your message" required><br>
+				<input type='submit' value='Send Message'>
 				<input type="reset" value="Reset" >
 			</form>
-			<h5>andrewhyeung@gmail.com</h5>
+			<h5>Or shoot me a direct email: andrewhyeung@gmail.com</h5>
 		</div>
 	</div>
 	<div id="resume">
