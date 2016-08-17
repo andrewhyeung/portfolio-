@@ -1,123 +1,98 @@
-<script type="text/javascript">
-	
-	window.sr = ScrollReveal({reset: true});
-	sr.reveal('.bar', {duration: 600});
-</script>
-
 <div id="container" ng-controller='emailController'>
 	<div id="content">
 		<div id="left" class='hide-on-small-only'>
-			<a class='link' href="#/#about_me">About Me</a> 
-			<a class='link' href="#/#projects">Projects</a>  
-			<a class='link' href="#/#experience">Experience</a> 
-			<a class='link' href="#/#contact">Contact</a>	
+			<a class='link' href="#about_me">About Me</a> 
+			<a class='link' href="#projects">Projects</a>  
+			<a class='link' href="#experience">Experience</a> 
+			<a class='link' href="#contact">Contact</a>	
 		</div>	
 		<div id="right">
-			<div id="head">
-				<h2>Andrew Yeung</h2>
-				<h6>"Full stack developer looking to add creative solutions to software development problems"</h6>
-				<hr>
+			<div class="bar">
+				<div id="about_me" class='section scrollspy'>
+					<div id="head">
+						<h2>Andrew Yeung</h2>
+						<h6>"Full stack developer looking to add creative solutions to software development problems"</h6>
+						<hr>
+					</div>
+				
+					<h4>About Me</h4>
+					<div class="row">
+						<img src="./static/images/andrew.jpg" height='50%' width='50%' class='col s6'>
+						<div  class='col s6'>
+							<div id='child'>
+								<p>I am a very enthusiastic full stack developer looking for new job opportunities. Avid fan of basketball and watching great movies. I develop in MEAN and Python full stacks using mongoDB and mySQL databases.</p>	
+							</div>			
+							<a href="https://www.linkedin.com/in/andrewhyeung" target="_blank">
+							<img class='professional_link' src="./static/images/in.svg" alt='Linkedin' width='100' height='100'>
+							</a>
+							<a href="https://github.com/andrewhyeung" target="_blank">
+								<img class='professional_link' src="./static/images/github.gif" alt='Github' width='100' height='100'>
+							</a>
+							<a href="./static/Andrew_Resume.pdf">
+								<img src="./static/images/resume.png" alt='resume' width='80' height='100' class='professional_link'>
+							</a>
+						</div>
+					</div>
+				</div>	
 			</div>
 
-			<div id="about_me" class='bar'>
-				<br>
-				<br> 
-				<br> 
-				<br> 
-				<br>
-				<h4>About Me </h4>
-				<div class="row">
-					<img src="./static/images/andrew.jpg" height='50%' width='50%' class='col s6'>
-					<div  class='col s6'>
-						<div id='child'>
-							<p>I am a very enthusiastic full stack developer looking for new job opportunities. Avid fan of basketball and watching great movies. I develop in MEAN and Python full stacks using mongoDB and mySQL databases.</p>	
-						</div>			
-						<a href="https://www.linkedin.com/in/andrewhyeung" target="_blank">
-						<img class='professional_link' src="./static/images/in.svg" alt='Linkedin' width='100' height='100'>
-						</a>
-						<a href="https://github.com/andrewhyeung" target="_blank">
-							<img class='professional_link' src="./static/images/github.gif" alt='Github' width='100' height='100'>
-						</a>
-						<a href="./static/Andrew_Resume.pdf">
-							<img src="./static/images/resume.png" alt='resume' width='80' height='100' class='professional_link'>
-						</a>
+			<div class="bar">
+				<div id="projects" class='section scrollspy'>
+					<h4 class='scrollspy'>Projects</h4>
+					<div class="row">
+						<div id="photo_dojo" class='col s6'>
+							<h6>Photo Dojo</h6>
+							<img src="./static/images/photodojo.png" alt='Photo Dojo' width='350' height='200'>
+							<p>Photo Dojo is a web application built in Python and mySQL. Uses the flask framework and stripe api to handle financial transactions. Website serves as an ecommerce site for photographers to sell their photos. Anyone can browse through the pictures and logged in users can make comments on photos.</p>
+							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
+			 			</div>
+			 				<h6>Tennis Draws</h6>
+						<div id='tennis_draws'>
+							<img src="./static/images/tennisDraws.jpg" alt='Tennis Draws' width ='350' height='200'>
+							<p>Tennis draws is a web application built in the MEAN stack. Website serves as a means to create/update draws for tennis tournaments. </p>
+							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
+						</div>	
 					</div>
-				</div>
-			</div>	
-			
-			<br>
-			<br> 
-
-			<div id="projects" class='bar'>
-				<br>
-				<br> 
-				<br> 
-				<br> 
-				<br>
-				<h4>Projects</h4>
-				<div class="row">
-					<div id="photo_dojo" class='col s6'>
-						<h6>Photo Dojo</h6>
-						<img src="./static/images/photodojo.png" alt='Photo Dojo' width='350' height='200'>
-						<p>Photo Dojo is a web application built in Python and mySQL. Uses the flask framework and stripe api to handle financial transactions. Website serves as an ecommerce site for photographers to sell their photos. Anyone can browse through the pictures and logged in users can make comments on photos.</p>
-						<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
-		 			</div>
-		 				<h6>Tennis Draws</h6>
-					<div id='tennis_draws'>
-						<img src="./static/images/tennisDraws.jpg" alt='Tennis Draws' width ='350' height='200'>
-						<p>Tennis draws is a web application built in the MEAN stack. Website serves as a means to create/update draws for tennis tournaments. </p>
-						<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
-					</div>	
 				</div>
 			</div>
 
-			<br>
-			<br>
-
-			<div id="experience" class='bar'> 
-				<br>
-				<br> 
-				<br> 
-				<br> 
-				<br>
-				<h4>Professional Experience</h4> 
-				<div class='row'>
-					<div class='col s4'>
-						<h5>Coding Dojo</h5>
-						<p>At Coding Dojo I developed full stack web applications in Python and Javascript technologies.</p>
-					</div>
-					<div class='col s4'>
-						<h5>Stanford Health Care </h5>
-						<p>At Stanford Health Care I worked in the Surgical Pathology department as a lab assistant. I was directly involved with preparing patient biopsies that led to succesful diagnosis of cancer in patients.</p>
-					</div>
-					<div class='col s4'>
-						<h5>Spectra Laboratories </h5>
-						<p>At Spectra Laboratories I worked in the Trace Elements department as a technician. My responsibilities included training MLT interns and new technicians on the SOP's of the lab as well as analyzing patient samples such as blood, water, and dialysate. 
-						 </p>
-					</div>
-				</div>			
+			<div class="bar">
+				<div id="experience"  class='section scrollspy'> 
+					<h4 class='scrollspy'>Professional Experience</h4> 
+					<div class='row'>
+						<div class='col s4'>
+							<h5>Coding Dojo</h5>
+							<p>At Coding Dojo I developed full stack web applications in Python and Javascript technologies.</p>
+						</div>
+						<div class='col s4'>
+							<h5>Stanford Health Care </h5>
+							<p>At Stanford Health Care I worked in the Surgical Pathology department as a lab assistant. I was directly involved with preparing patient biopsies that led to succesful diagnosis of cancer in patients.</p>
+						</div>
+						<div class='col s4'>
+							<h5>Spectra Laboratories </h5>
+							<p>At Spectra Laboratories I worked in the Trace Elements department as a technician. My responsibilities included training MLT interns and new technicians on the SOP's of the lab as well as analyzing patient samples such as blood, water, and dialysate. 
+							 </p>
+						</div>
+					</div>			
+				</div>
 			</div>
 
 
-			<div id="contact" class='bar'>
-				<br>
-				<br> 
-				<br> 
-				<br> 
-				<br>
-				<h4>Contact me</h4>
-				<form ng-submit='submitForm()' enctype="text/plain">
-					Name:<br>
-					<input id="first_name" type="text" ng-model = 'name' required><br>
-					E-mail:<br>
-					<input type="email" ng-model='email' required><br>
-					Message:<br>
-					<textarea ng-model='messages' required></textarea>
-					<input class="btn waves-effect waves-brown" type='submit' value='Send Message'>
-					<input class="btn waves-effect waves-brown" type="reset" value="Reset" >
-
-				</form>
-				<h5>Or shoot me an email directly: andrewhyeung@gmail.com</h5>
+			<div class="bar">
+				<div id="contact"  class='section scrollspy'>
+					<h4 class='scrollspy'>Contact me</h4>
+					<form ng-submit='submitForm()' enctype="text/plain">
+						Name:<br>
+						<input id="first_name" type="text" ng-model = 'name' required><br>
+						E-mail:<br>
+						<input type="email" ng-model='email' required><br>
+						Message:<br>
+						<textarea ng-model='messages' required></textarea>
+						<input class="btn waves-effect waves-brown" type='submit' value='Send Message'>
+						<input class="btn waves-effect waves-brown" type="reset" value="Reset" >
+					</form>
+					<h5>Or shoot me an email directly: andrewhyeung@gmail.com</h5>
+				</div>
 			</div>
 			<footer>&copy; Copyright 2016 Andrew Yeung</footer>
 		</div>
@@ -125,3 +100,12 @@
 	</div>
 
 </div>
+<script type="text/javascript">
+	window.sr = ScrollReveal({reset: true});
+	sr.reveal('.bar', {duration: 600});
+	
+	$(document).ready(function(){
+		$('.scrollspy').scrollSpy();
+	})
+
+</script>
