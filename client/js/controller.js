@@ -4,11 +4,11 @@ myApp.controller('emailController', function($scope, emailFactory){
 		form = {
 			name: $scope.name, 
 			email: $scope.email,
-			message: $scope.message
+			message: $scope.messages
 		}
 		emailFactory.submitForm(form); 
 		$scope.name = null; 
 		$scope.email = null; 
-		$scope.message = null; 
+		$scope.messages = null; 
 	}
 })
