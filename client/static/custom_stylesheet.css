@@ -53,8 +53,19 @@ a{
 
 #contact{
 	margin-top: 200px;
+
+}
+.waves-effect.waves-brown{
+	background-color: brown;
 }
 
+input, textarea{
+	color: black;
+}
+
+textarea:focus, input:focus{
+	color: white;
+}
 
 
 
