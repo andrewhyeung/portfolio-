@@ -1,34 +1,61 @@
 body{
-
-}
-#container{
 	text-align: center;	
-	color: black;
-
+	color:  #ccccb3;
+	background-color: #6b6b47;
+	height: 100%;
 }
+#left{
+	position: fixed; 
+	width: 200px;
+	background-color: #6b6b47;
+	padding-bottom: 80px;
+}
+	#left a{
+		font-size: 220%; 
+		display: block;
+		margin-top: 40%;
+		color: white;
+	}
+a{
+	color:  #2f2f1e;
+}
+#right{
+	width: auto;
+	position: relative;
+	display: block;
+	overflow: auto;
+	margin-left: 200px;
+}
+
 
 .professional_link{
-	height: 150px;
-	width: 150px
+	height: 100px;
+	width: 100px
 }
 
-.col.s3.head {
-	font-size: 150%;	
-}
 
-#content
-{
-    position:absolute;
-    top: 195px;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    overflow-y:scroll;        
-}​
+
 #right{
-	line-height: 100px;
+	line-height: 20px;
 }
+
 #child{
-	margin-top: 80px;
+	margin-top: 40px;
 }
+
+#projects{
+	margin-top: 200px;
+}
+
+#experience{
+	margin-top: 200px;
+}
+
+#contact{
+	margin-top: 200px;
+}
+
+
+
+
 

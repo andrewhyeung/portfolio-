@@ -34,7 +34,7 @@ app.post('/email', function(req, res){
 	var mailOptions = {
 		    from: req.body.name, 
 		    to: 'andrewhyeung@gmail.com', // list of receivers 
-		    subject: 'Message from portfolio', // Subject line 
+		    subject: 'Portfolio contact message', // Subject line 
 		    text: req.body.message + ' from ' + req.body.email
 		  
 		};
