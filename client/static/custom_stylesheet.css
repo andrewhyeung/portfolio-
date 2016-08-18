@@ -10,6 +10,7 @@ body{
 	/*display: inline-block;*/
 	background-color: #6b6b47;
 	padding-bottom: 80px;
+	padding-right: 30px;
 }
 	#left a{
 		font-size: 220%; 
