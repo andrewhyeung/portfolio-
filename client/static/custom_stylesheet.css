@@ -13,6 +13,7 @@ body{
 }
 	#left a{
 		font-size: 220%; 
+		font-weight: 900;
 		display: block;
 		margin-top: 40%;
 		color: white;
@@ -55,12 +56,14 @@ a{
 
 #projects{
 	margin-top: 200px;
-	height: 100%
+	height: 100%;
+	width: 100%;
 }
-
+	#projects col 
 #experience{
 	margin-top: 200px;
-	height: 100%
+	height: 100%;
+	width: 100%;
 }
 
 #contact{
