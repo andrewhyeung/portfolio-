@@ -12,11 +12,12 @@ body{
 	padding-bottom: 80px;
 	margin-left: 1%;
 }
+
 	#left a{
 		font-size: 220%; 
 		font-weight: 600;
 		display: block;
-		margin-top: 15%;
+		margin-top: 10%;
 		color: #ccccb3;
 	}
 
