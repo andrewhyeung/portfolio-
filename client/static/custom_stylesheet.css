@@ -105,5 +105,8 @@ textarea:focus, input:focus{
 footer{
 	margin-bottom: 180px;
 }
+#left ul li a.active {
+	color: black;
+}
 
 

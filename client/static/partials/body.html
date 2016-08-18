@@ -1,11 +1,20 @@
 <div id="container" ng-controller='emailController'>
 	<div id="content" class='row'>
-		<div id="left">
-			<a class='link' href="#about_me">About Me</a> 
-			<a class='link' href="#projects">Projects</a>  
-			<a class='link' href="#experience">Experience</a> 
-			<a class='link' href="#contact">Contact</a>	
+		<div id="left" class='col hide-on-small-only m3 12'>
+			<ul>
+				<li><a class='link' href="#about_me">About Me</a></li>
+				<li><a class='link' href="#projects">Projects</a>  </li>
+				<li><a class='link' href="#experience">Experience</a> </li>
+				<li><a class='link' href="#contact">Contact</a>	</li>
+			</ul>
+				 
+				
+
+			
+
 		</div>	
+
+
 		<div id="right">
 			<div class="bar">
 				<div id="about_me" class='section scrollspy'>
@@ -90,7 +99,8 @@
 				<div id="contact"  class='section scrollspy'>
 					<h4 class='scrollspy'>Contact me</h4>
 					<form ng-submit='submitForm()' enctype="text/plain">
-						<input placeholder='Your Name' id="first_name" type="text" ng-model = 'name' required><br>
+						Your Name:<br>
+						<input  id="first_name" type="text" ng-model = 'name' required><br>
 						E-mail:<br>
 						<input id='email' type="email" ng-model='email' required><br>
 						Message:<br>
@@ -123,6 +133,7 @@
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy();
 	})
+        
 
 </script>
 <script>
