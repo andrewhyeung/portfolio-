@@ -5,6 +5,7 @@ body{
 	height: 100%;
 }
 #left{
+	text-align: left;
 	position: fixed; 
 	height: 70%;
 	background-color: #6b6b47;
@@ -13,10 +14,10 @@ body{
 }
 	#left a{
 		font-size: 220%; 
-		font-weight: 900;
+		font-weight: 600;
 		display: block;
-		margin-top: 40%;
-		color: white;
+		margin-top: 20%;
+		color: #ccccb3;
 	}
 
 a{
@@ -59,7 +60,7 @@ a{
 	height: 100%;
 	width: 100%;
 }
-	#projects col 
+
 #experience{
 	margin-top: 200px;
 	height: 100%;
@@ -69,11 +70,26 @@ a{
 #contact{
 	height: 100%; 
 	margin-top: 200px;
-	margin-bottom: 190px;
 	width:75%;
 	margin-left: auto; 
 	margin-right: auto;
 }
+
+#first_name {
+	background-color: #D3D3D3;
+	border: 2px solid grey;
+}
+
+#email {
+	background-color: #D3D3D3;
+	border: 2px solid grey;
+}
+
+#textarea {
+	background-color: #D3D3D3;
+	border: 2px solid grey;
+}
+
 .waves-effect.waves-brown{
 	background-color: brown;
 }
@@ -86,6 +102,8 @@ textarea:focus, input:focus{
 	color: white;
 }
 
-
+footer{
+	margin-bottom: 180px;
+}
 
 
