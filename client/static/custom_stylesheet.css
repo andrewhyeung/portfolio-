@@ -8,7 +8,7 @@ body{
 	text-align: left;
 	position: fixed; 
 	height: 70%;
-	background-color: #6b6b47;
+	background-color: ;
 	padding-bottom: 80px;
 	margin-left: 1%;
 }
@@ -71,6 +71,9 @@ a{
 .col.s4{
 		text-align: left;
 	}
+.col.s6 {
+	text-align: left;
+}
 
 #contact{
 	height: 100%; 
