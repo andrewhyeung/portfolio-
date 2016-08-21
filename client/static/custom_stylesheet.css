@@ -14,12 +14,13 @@ body{
 }
 
 	#left a{
-		font-size: 180%; 
-		font-weight: 600;
+		font-size: 200%; 
+		font-weight: 400;
 		display: block;
-		margin-top: 10%;
+
 		color: #ccccb3;
 	}
+
 a{
 	color:  #2f2f1e;
 }
@@ -30,11 +31,11 @@ a{
 	display: block;
 	overflow: auto;
 	margin-left: 200px;
+
 }
 
-.professional_link{
-	height: 100px;
-	width: 100px
+.col.s5{
+	text-align: left;
 }
 
 #right{
@@ -42,7 +43,9 @@ a{
 }
 
 #child{
-	margin-top: 40px;
+	margin-top: 30px;
+	text-align: left;
+
 }
 
 #head{
@@ -63,7 +66,11 @@ a{
 	margin-top: 200px;
 	height: 100%;
 	width: 100%;
+
 }
+.col.s4{
+		text-align: left;
+	}
 
 #contact{
 	height: 100%; 

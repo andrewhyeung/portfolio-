@@ -1,12 +1,13 @@
 <div id="container" ng-controller='emailController'>
 	<div id="content" class='row'>
-		<div id="left" class='col hide-on-small-only m3 12'>
+		<div id="left">
 			<ul>
 				<li><a class='link' href="#about_me">About Me</a></li>
 				<li><a class='link' href="#projects">Projects</a>  </li>
 				<li><a class='link' href="#experience">Experience</a> </li>
 				<li><a class='link' href="#contact">Contact</a>	</li>
 			</ul>
+
 		</div>	
 
 
@@ -24,7 +25,7 @@
 						<img src="./static/images/andrew.jpg" height='40%' width='40%'>
 						<div  class='col s6'>
 							<div id='child'>
-								<p>I am a very enthusiastic full stack developer currently looking for new job opportunities. Avid fan of basketball and watching great movies. I develop in MEAN and Python full stacks using mongoDB and mySQL databases.</p>	
+								<p>I am a very enthusiastic full stack developer currently looking for new job opportunities. Avid fan of basketball and watching amazing movies. I develop in MEAN and Python full stacks using mongoDB and mySQL databases.</p>	
 							</div>			
 							<a href="https://github.com/andrewhyeung" target="_blank">
 								<img class='professional_link' src="./static/images/github.gif" alt='Github' width='100' height='100'>
@@ -40,31 +41,63 @@
 				</div>	
 			</div>
 
+
 			<div class="bar">
 				<div id="projects" class='section scrollspy'>
 					<h3>Projects</h3>
-					<div class="row">
-						<div id="photo_dojo" class='col s4 projects'>
+					<!-- <div class="carousel carousel-slider">
+						<div class="carousel-item">
+							<img src="./static/images/photodojo.png" alt='Photo Dojo'>
 							<h6>Photo Dojo</h6>
-							<img src="./static/images/photodojo.png" alt='Photo Dojo' width='350' height='200'>
 							<p>Photo Dojo is a web application built in Python and mySQL. Uses the flask framework and stripe api to handle financial transactions. Website serves as an ecommerce site for photographers to sell their photos. Anyone can browse through the pictures and logged in users can make comments on photos.</p>
-							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
-			 			</div>
-			 				
-						<div id='tennis_draws' class ='col s4 projects'>
+							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>	
+						</div>
+						<div class="carousel-item">
+							<img src="./static/images/tennisDraws.jpg" alt='Tennis Draws' width='100%'>	
 							<h6>Tennis Draws</h6>
-							<img src="./static/images/tennisDraws.jpg" alt='Tennis Draws' width ='350' height='200'>
 							<p>Tennis draws is a web application built in the MEAN stack. Website serves as a means to create/update draws for tennis tournaments. </p>
-							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
-						</div>	
-						<div id="before30" class = 'col s4 projects'>
+							<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>	
+						</div>
+						<div class="carousel-item">
+							<img src="./static/images/30.png" alt='Tennis Draws'  width='100%'>	
 							<h6>Before 30</h6>
-							<img src="./static/images/30.png" alt='Tennis Draws' width ='350' height='200'>
 							<p>Before 30 is a simple application built in the MEAN stack that serves to illustrate some dreams and goals people under 30 might have.</p>
 							<a href="https://github.com/andrewhyeung/before30" target='_blank'>Github</a>
 						</div>
+					</div> -->
+					<div class="row">
+						<div id="photo_dojo">
+							<img src="./static/images/photodojo.png" alt='Photo Dojo'  class='col s5'>
 
-					</div>
+							<div class='col s6'> 
+								<h6>Photo Dojo</h6>
+								<p>Photo Dojo is a web application built in Python and mySQL. Uses the flask framework and stripe api to handle financial transactions. Website serves as an ecommerce site for photographers to sell their photos. Anyone can browse through the pictures and logged in users can make comments on photos.</p>
+								<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>
+							</div>
+							
+			 			</div>
+			 		</div>
+			 		<div class="row">
+			 			<div id='tennis_draws' >
+							<img src="./static/images/tennisDraws.jpg" alt='Tennis Draws' width='100%' class='col s5'>
+							<div class="col s6">
+								<h6>Tennis Draws</h6>
+								<p>Tennis draws is a web application built in the MEAN stack. Website serves as a means to create/update draws for tennis tournaments. </p>
+								<a href="https://github.com/andrewhyeung/tennisDraws" target="_blank">Github</a>	
+							</div>
+						</div>	
+			 		</div>		
+			 		<div class="row">
+			 			<div id="before30">
+							<img src="./static/images/30.png" alt='Tennis Draws'  width='100%' class ='col s5'>
+							<div class="col s6">
+								<h6>Before 30</h6>
+							
+								<p>Before 30 is a simple application built in the MEAN stack that serves to illustrate some dreams and goals people under 30 might have.</p>
+								<a href="https://github.com/andrewhyeung/before30" target='_blank'>Github</a>
+							</div>
+						</div>
+			 		</div>
 				</div>
 			</div>
 
@@ -127,6 +160,8 @@
 	
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy();
+		$('.carousel').carousel(); 
+		$('.carousel.carousel-slider').carousel({full_width: true});
 	})
         
 
