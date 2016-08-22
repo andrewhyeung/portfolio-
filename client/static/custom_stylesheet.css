@@ -1,6 +1,5 @@
 body{
 	text-align: center;	
-
 	height: 100%;
 }
 #left{
@@ -41,12 +40,13 @@ header{
 	background-position: center;
 	color: white;
 	background-image: url('./images/header.jpg');
-	padding-bottom: 200px;
+	padding: 10%;
+	padding-bottom: 20%;
+	padding-top: 20%;
 }
 #about{
 	text-align: left;
 	margin-top: 10%;
-
 }
 
 #head{
@@ -60,13 +60,16 @@ header{
 #projects{
 	height: 100%;
 	width: 100%;
+	background-color: #DCDCDC;
+	padding: 10%;
 }
 
 #experience{
-	margin-top: 200px;
 	height: 100%;
 	width: 100%;
-
+	padding: 10%;
+	padding-top: 20%;
+	padding-bottom: 20%;
 }
 .col.s4{
 		text-align: left;
@@ -77,10 +80,10 @@ header{
 
 #contact{
 	height: 100%; 
-	margin-top: 200px;
 	width:75%;
 	margin-left: auto; 
 	margin-right: auto;
+	padding-top: 10%;
 }
 
 #first_name {
@@ -107,7 +110,7 @@ input, textarea{
 }
 
 textarea:focus, input:focus{
-	color: white;
+	color: brown;
 }
 
 footer{
