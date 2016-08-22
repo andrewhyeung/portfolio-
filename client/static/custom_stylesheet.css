@@ -1,31 +1,31 @@
 body{
 	text-align: center;	
-	color:  #ccccb3;
-	background-color: #6b6b47;
+
 	height: 100%;
 }
 #left{
 	text-align: left;
 	position: fixed; 
-	height: 70%;
-	background-color: ;
-	padding-bottom: 80px;
-	margin-left: 1%;
+	height: 100%;
+	width: 13%;
+	background-color: black;
+	opacity: 0.8;
+	padding-left: 1%;
 }
 
 	#left a{
-		font-size: 200%; 
+		font-size: 150%; 
 		font-weight: 400;
 		display: block;
 
-		color: #ccccb3;
+		color: white;
 	}
 
 a{
 	color:  #2f2f1e;
 }
 #right{
-	margin-top: 2%;
+
 	width: 82%;
 	position: relative;
 	display: block;
@@ -38,14 +38,8 @@ a{
 	text-align: left;
 }
 
-#right{
-	line-height: 20px;
-}
-
-#child{
-	margin-top: 30px;
+#about{
 	text-align: left;
-
 }
 
 #head{
@@ -114,7 +108,7 @@ footer{
 	margin-bottom: 180px;
 }
 #left ul li a.active {
-	color: black;
+	color: brown;
 }
 
 
