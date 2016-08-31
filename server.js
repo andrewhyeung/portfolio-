@@ -1,14 +1,10 @@
 var express = require('express'); 
-
 var path = require('path'); 
-
-var app = express(); 
-
+var app = express();
 var bodyParser = require('body-parser'); 
-
 var nodemailer = require('nodemailer'); 
-
-var pa = require('./app.js')
+var xoauth2 = require('xoauth2');
+var pa = require('./app.js');
 
 app.use(express.static(path.join(__dirname, '/client'))); 
 app.use(bodyParser.json()); 
@@ -25,8 +21,12 @@ var smtpConfig ={
 	auth: {
 		user: 'andrewhyeung@gmail.com', 
 		pass: pa.key() 
+	}, 
+	tls:{
+		secureProtocol: "TLSv1_method"
 	}
 };
+
 
 var transporter = nodemailer.createTransport(smtpConfig);
 
