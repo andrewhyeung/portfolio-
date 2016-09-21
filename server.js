@@ -19,8 +19,8 @@ var smtpConfig ={
 	port: 465, 
 	secure: true, 
 	auth: {
-		user: 'andrewhyeung@gmail.com', 
-		pass: pa.key() 
+		user: 'yeungportfolioandrew@gmail.com', 
+		pass: pa.key 
 	}, 
 	tls:{
 		secureProtocol: "TLSv1_method"
